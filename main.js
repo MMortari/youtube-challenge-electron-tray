@@ -56,6 +56,12 @@ function render(tray = mainTray) {
         },
       },
       {
+        label: locale.open_bash,
+        click: () => {
+          spawn(`cd ${path} && start "" "%SYSTEMDRIVE%\\Program Files\\Git\\bin\\sh.exe" --login -i`, { shell: true });
+        },
+      },
+      {
         label: locale.remove,
         click: () => {
           store.set('projects', JSON.stringify(projects.filter(item => item.path !== path)));

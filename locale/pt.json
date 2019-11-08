@@ -1,5 +1,6 @@
 {
     "open": "Abrir no VSCode",
+    "open_bash": "Abrir no Bash",
     "add": "Adicionar novo projeto...",
     "close": "Fechar Code Tray",
     "remove": "Remover"
